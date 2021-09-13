@@ -8,5 +8,5 @@ runs:
   steps:
   - run: echo "Going to print some information"
     shell: bash
-  - uses: .github/actions/hostname-action
-  - uses: .github/actions/uptime-action
+  - uses: ./.github/actions/hostname-action
+  - uses: ./.github/actions/uptime-action
