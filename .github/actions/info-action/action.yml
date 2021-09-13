@@ -1,0 +1,12 @@
+
+name: Demo Action
+description: Demonstrates Composite Actions
+inputs: {}
+outputs: {}
+runs:
+  using: composite
+  steps:
+  - run: echo "Going to print some information"
+    shell: bash
+  - uses: .github/actions/hostname-action
+  - uses: .github/actions/uptime-action

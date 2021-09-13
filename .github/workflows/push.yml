@@ -1,0 +1,6 @@
+on: push
+jobs:
+  info:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: .github/actions/info-actions

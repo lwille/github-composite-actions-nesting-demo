@@ -1,0 +1,10 @@
+name: Hostname Action
+description: Print hostname
+inputs: {}
+outputs: {}
+runs:
+  using: composite
+  steps:
+  - run: hostname
+    shell: bash
+

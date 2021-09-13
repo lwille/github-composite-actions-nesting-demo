@@ -1,0 +1,9 @@
+name: Uptime Action
+description: Print system uptime
+inputs: {}
+outputs: {}
+runs:
+  using: composite
+  steps:
+  - run: uptime
+    shell: bash
