@@ -6,6 +6,9 @@ outputs: {}
 runs:
   using: composite
   steps:
+  - uses: actions/setup-node@v2
+    with:
+      node-version: '14'
   - run: echo "Going to print some information"
     shell: bash
   - uses: ./.github/actions/hostname-action
